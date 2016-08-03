@@ -1,4 +1,4 @@
-namespace TheSpotApp.Controllers {
+namespace SpotApp.Controllers {
   export class HomeController {
 
     constructor() {
@@ -27,5 +27,5 @@ namespace TheSpotApp.Controllers {
     }
   }
 
-  angular.module('TheSpotApp').controller('HomeController', HomeController);
+  angular.module('SpotApp').controller('HomeController', HomeController);
 }

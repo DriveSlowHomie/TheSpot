@@ -1,6 +1,6 @@
 'use strict';
-namespace TheSpotApp {
-  angular.module('TheSpotApp', ['ui.router', 'ngResource', 'ui.bootstrap'])
+namespace SpotApp {
+  angular.module('SpotApp', ['ui.router', 'ngResource', 'ui.bootstrap'])
     .config((
     $stateProvider: ng.ui.IStateProvider,
     $locationProvider: ng.ILocationProvider,
@@ -9,22 +9,22 @@ namespace TheSpotApp {
     $stateProvider.state('Home', {
       url: '/',
       templateUrl: '/templates/home.html',
-      controller: TheSpotApp.Controllers.HomeController,
+      controller: SpotApp.Controllers.HomeController,
       controllerAs: 'vm'
     }).state('MarkPage', {
       url: '/markPage',
       templateUrl: '/templates/markPage.html',
-      controller: TheSpotApp.Controllers.MarkPageController,
+      controller: SpotApp.Controllers.MarkPageController,
       controllerAs: 'vm'
     }).state('ExplorePage', {
       url: '/explorePage',
       templateUrl: '/templates/explorePage.html',
-      controller: TheSpotApp.Controllers.ExplorePageController,
+      controller: SpotApp.Controllers.ExplorePageController,
       controllerAs: 'vm'
     }).state('HitPage', {
       url: '/hitPage',
       templateUrl: '/templates/hitPage.html',
-      controller: TheSpotApp.Controllers.HitPageController,
+      controller: SpotApp.Controllers.HitPageController,
       controllerAs: 'vm'
     });
 
