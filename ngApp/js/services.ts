@@ -1,3 +1,3 @@
-namespace app.Services {
+namespace TheSpotApp.Services {
 
 }

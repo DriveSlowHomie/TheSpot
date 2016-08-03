@@ -21,12 +21,6 @@ app.use(cookieParser());
 app.use(express.static('./ngApp'));
 app.use('/scripts', express.static('bower_components'));
 
-app.use('/api', require('./api/makes'));
-app.use('/api', require('./api/cars'));
-app.use('/api', require('./api/movies'));
-app.use('/api', require('./api/genres'));
-app.use('/api', require('./api/guestbook'));
-app.use('/api', require('./api/deepThought'));
 
 app.get('/*', function(req, res, next) {
   if (/.js|.html|.css|templates|js|scripts/.test(req.path) || req.xhr) {
