@@ -1,6 +1,7 @@
 namespace SpotApp.Controllers {
   export class HomeController {
 
+
     constructor() {
 
     }
@@ -21,6 +22,7 @@ namespace SpotApp.Controllers {
   }
 
   export class HitPageController {
+
 
     constructor() {
 
