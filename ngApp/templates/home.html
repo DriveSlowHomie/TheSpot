@@ -1,6 +1,6 @@
-<nav>
+<nav class="navbar purple darken-3">
   <div class="nav-wrapper">
-    <a href="#" class="brand-logo"><img style="max-width:100px; margin-top: 7px;" src="images/spotlogo.png" /></a>
+    <a href="#" class="brand-logo"><img style="max-width:100px; margin-top: 7px;" src="images/logo2.png" /></a>
     <ul id="nav-mobile" class="right hide-on-med-and-down">
       <li>
           <a href="#">
@@ -41,69 +41,92 @@
  </div> -->
 
 
- <div class="section white">
- </div>
-<div id="index-banner" class="parallax-container">
+<div class="section purple lighten-3"></div>
+
+
+<div class="parallax-container">
   <div class="parallax">
-    <img class="responsive-img" src="images/studyspot.jpg">
+    <img src="images/studyspot.jpg">
   </div>
 
+    <img class="displayed" src="images/logo2.png"/>
+
+      <h4 class="motto" align="center" style="color:white;">
+        Mark. Explore. Hit.
+      </h4>
 
 
-          <img class="displayed" src="images/spotlogo.png"/>
+      <div class="row center">
+          <h5 style="color:white;">
+              Comming Soon! Stay Posted!
+          </h5>
 
-            <h4 class="motto" align="center">
-              Mark. Explore. Hit.
-            </h4>
-
-
-            <div class="row center">
-
-                <h5>
-                    Comming Soon! Stay Posted!
-                </h5>
-
-                  <div class="row">
-                    <form class="col s12">
-                      <div class="row">
-                        <div class="input-field col s12">
-                          <input id="email" type="email" class="validate" placeholder="Your email here...">
-                          <label for="email">Email address</label>
-                        </div>
-                      </div>
-                    </form>
+            <div class="row">
+              <form class="col s12">
+                <div class="row">
+                  <div class="input-field col s12">
+                    <input ng-model="vm.email" id="email" type="email" class="validate" placeholder="Your email here...">
+                    <button class='btn btn-success' ng-click='vm.showModal()'>Submit</button>
                   </div>
-
-
-
+                </div>
+              </form>
             </div>
+      </div>
 </div>
 
 
-<div class="section white">
+<div class="section purple lighten-3">
     <div class="row container">
-      <h2 class="header">Parallax</h2>
-      <p class="grey-text text-darken-3 lighten-3">Parallax is an effect where the background content or image in this case, is moved at a different speed than the foreground content while scrolling.</p>
+
+
+        <div class="col s4">
+          <h1 align="center">Mark</h1>
+          <img class="logos" src="images/marklogo.png" />
+          <p align="center">Mark and set up spots to everyday places you visit.</p>
+        </div>
+        <div class="col s4">
+          <h1 align="center">Explore</h1>
+          <img class="logos" src="images/explorelogo.png" />
+          <p align="center">Explore your friends spots and find new areas to mark.</p>
+        </div>
+        <div class="col s4">
+          <h1 align="center">Hit</h1>
+          <img class="logos" src="images/hitlogo.png" />
+          <p align="center">Hit spots to when you visit them to let your frineds know if your around.</p>
+        </div>
+
+
     </div>
 </div>
 
 
+
 <div class="parallax-container">
-  <div class="parallax"><img src="images/smokespot.jpg"></div>
+  <div class="parallax">
+    <img src="images/smokespot.jpg">
+  </div>
 </div>
 
-  <div class="section white">
+
+  <div class="section purple lighten-3">
       <div class="row container">
         <h2 class="header">Parallax</h2>
         <p class="grey-text text-darken-3 lighten-3">Parallax is an effect where the background content or image in this case, is moved at a different speed than the foreground content while scrolling.</p>
       </div>
   </div>
 
+
+
 <div class="parallax-container">
-  <div class="parallax"><img src="images/hangoutspot.jpg"></div>
+  <div class="parallax">
+    <img src="images/hangoutspot.jpg">
+  </div>
 </div>
 
-<footer class="page-footer">
+
+
+
+<footer class="page-footer purple darken-3">
     <div class="container">
       Powered by Google Maps
     </div>
