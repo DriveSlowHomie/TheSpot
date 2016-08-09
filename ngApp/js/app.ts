@@ -1,10 +1,9 @@
 'use strict';
 namespace SpotApp {
-  angular.module('SpotApp', ['ui.router', 'ngResource', 'ui.bootstrap', 'uiGmapgoogle-maps'])
+  angular.module('SpotApp', ['ui.router', 'ngResource', 'ui.bootstrap'])
     .config((
     $stateProvider: ng.ui.IStateProvider,
     $locationProvider: ng.ILocationProvider,
-    uiGmapGoogleMapApiProvider: any,
     $urlRouterProvider:  ng.ui.IUrlRouterProvider) => {
 
     $stateProvider.state('Home', {
@@ -31,10 +30,6 @@ namespace SpotApp {
 
     $urlRouterProvider.otherwise('/');
     $locationProvider.html5Mode(true);
-
-    // uiGmapGoogleMapApiProvider.configure({
-    //            key: 'AIzaSyAU-rA_HwaG5ZTXLE5D8ieJVumBFkWaxAk',
-    // });
 
   });
 }

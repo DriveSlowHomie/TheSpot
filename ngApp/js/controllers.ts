@@ -34,18 +34,20 @@ namespace SpotApp.Controllers {
 
   export class MarkPageController {
 
-    // public initMap() {
-    //     var mapDiv = document.getElementById('map');
-    //     var map = new google.maps.Map(mapDiv, {
-    //         center: {lat: 44.540, lng: -78.546},
-    //         zoom: 8
-    //     });
-    //   }
+
 
     constructor() {
 
+      // navigator.geolocation.getCurrentPosition(showPosition);
+      //
+      // function showPosition(position) {
+      //     console.log("lat:"+position.coords.latitude)
+      //  	console.log("lat:"+position.coords.longitude)
+      // }
+
     }
-  }
+}
+
 
   export class ExplorePageController {
 
