@@ -34,19 +34,15 @@ namespace SpotApp.Controllers {
 
   export class MarkPageController {
 
+    public center = { latitude: 37.09024, longitude: -100.712891};
+    public zoom = 4;
+
 
 
     constructor() {
 
-      // navigator.geolocation.getCurrentPosition(showPosition);
-      //
-      // function showPosition(position) {
-      //     console.log("lat:"+position.coords.latitude)
-      //  	console.log("lat:"+position.coords.longitude)
-      // }
-
     }
-}
+  }
 
 
   export class ExplorePageController {

@@ -18,14 +18,21 @@
 
   <link rel="stylesheet" href="/css/site.css"/>
 
-    <!--     Fonts     -->
-    <link href="http://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.css" rel="stylesheet">
-    <link href='http://fonts.googleapis.com/css?family=Grand+Hotel' rel='stylesheet' type='text/css'>
+  <!--     Fonts     -->
+  <link href="http://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.css" rel="stylesheet">
+  <link href='http://fonts.googleapis.com/css?family=Grand+Hotel' rel='stylesheet' type='text/css'>
 
 
-    <!-- Compiled and minified CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
 
+	<style>
+    .angular-google-map-container {
+      height: 400px;
+      width: 1000px;
+      border: 1px solid black;
+    }
+  </style>
 
 </head>
 
@@ -35,14 +42,14 @@
   <ui-view></ui-view>
 
 
-
-
   <script src="/scripts/angular/angular.min.js"></script>
   <script src="/scripts/angular-ui-router/release/angular-ui-router.min.js"></script>
   <script src="/scripts/angular-resource/angular-resource.min.js"></script>
   <script src="/scripts/angular-animate/angular-animate.min.js"></script>
   <script src="/scripts/angular-touch/angular-touch.min.js"></script>
   <script src="/scripts/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
+	<script src="\scripts\lodash\dist\lodash.min.js"></script>
+	<script src="\scripts\angular-simple-logger\dist\angular-simple-logger.min.js"></script>
 
   <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
 
@@ -56,19 +63,6 @@
   $(document).ready(function(){
       $('.parallax').parallax();
     });
-  </script>
-
-	<script>
-		function initMap() {
-				var mapDiv = document.getElementById('map');
-				var map = new google.maps.Map(mapDiv, {
-						center: {lat: 44.540, lng: -78.546},
-						zoom: 8
-				});
-			}
-	</script>
-
-	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAU-rA_HwaG5ZTXLE5D8ieJVumBFkWaxAk&callback=initMap" async defer>
 	</script>
 
 
